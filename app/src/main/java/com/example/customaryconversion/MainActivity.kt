@@ -11,9 +11,13 @@ import android.view.View
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
+
+        lateinit var inputNumber: EditText
+
         val lengths = resources.getStringArray(R.array.Lengths)
         val inSpinner = findViewById<Spinner>(R.id.inputSpinner)
         if (inSpinner != null) {
@@ -28,11 +32,9 @@ class MainActivity : AppCompatActivity() {
                     parent: AdapterView<*>,
                     view: View, position: Int, id: Long
                 ) {
-                    Toast.makeText(
-                        this@MainActivity,
-                        getString(R.string.selected_item) + " " +
-                                "" + lengths[position], Toast.LENGTH_SHORT
-                    ).show()
+                    if(getString(R.string.selected_item) == "in") {
+
+                    }
                 }
 
                 override fun onNothingSelected(parent: AdapterView<*>) {
