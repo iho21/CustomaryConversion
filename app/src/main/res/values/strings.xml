@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">CustomaryConversion</string>
+    <string name="selected_item">Selected item:</string>
+
+    <string-array name="Lengths">
+        <item>in</item>
+        <item>ft</item>
+        <item>yd</item>
+        <item>mi</item>
+    </string-array>
 </resources>
